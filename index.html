@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        } 
+        
+        .background-image{
+            background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.2)), url(https://images.pexels.com/photos/9218645/pexels-photo-9218645.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            font-family: sans-serif;
+
+        }
+        .nav{
+            height: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+align-items: center;
+color: white;
+        }
+        .logo{
+            font-size: 2em;
+            letter-spacing: 2px;
+            color: indianred;
+        }
+        .menu a{
+            text-decoration: none;
+            color: seagreen;
+            padding: 10px 20px;
+            font-size: 20px;
+            position: relative;
+
+        }
+        .menu a::before{
+            content: "";
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            width: 0%;
+            height: 100%;
+            border-bottom: 2px solid;
+            transition: 0.4s linear;
+
+        }
+        .menu a:hover::before{
+            width: 90%;
+        }
+        .register a{
+            text-decoration: none;
+            color: seagreen;
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: indianred;
+            border-radius: 8px;
+            transition: 0.4s;
+        }
+        .register a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+
+        .h-txt{
+            max-width: 650px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% ,-50%);
+            text-align: center;
+            color: white;
+
+        }
+        .h-txt h1{
+            font-size: 3.5em;
+        }
+        .h-txt a{
+            text-decoration: none;
+            background-color: indianred;
+            color: white;
+            padding: 10px 20px;
+            letter-spacing: 2px;
+            border-radius: 8px;
+        }
+        .h-txt a:hover{
+            background: transparent;
+            border: 1px solid indianred;
+        }
+        span{
+            font-size: 20px;
+            color: indianred;
+            letter-spacing: 2px;
+        }
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <div class="background-image">
+        <div class="nav">
+            <div class="logo">Portfolio</div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Services</a>
+            </div>
+            <div class="register">
+                <a href="#">On line Services</a>
+            </div>
+
+        </div>
+        <section class="h-txt">
+            <span>Sumaira shakeel</span>
+            <h1>provided best Services</h1>
+            <br>
+            <a href="#">visit site</a>
+    
+        </section>
+        
+    
+        
+        
+        
+    </div>
+</body>
+</html>
